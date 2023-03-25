@@ -1,0 +1,94 @@
+{% extends "layout.html" %}
+{% block script %}
+{% endblock script %}
+{% block my_content %}
+<h1 style="text-align:center; padding:10px"><strong>{{context.teamSt}}</strong></h1>
+<h4 style="text-align:center">{{context.level}}</h1>
+
+<div class="row">
+    <div class="col-sm">
+        <!-- small box -->
+        <div class="small-box bg-warning" style="margin:10px">
+            <div class="inner">
+                <h3>{{context.auto_avg}}</h3>
+
+                <p>Average points scored from auto cargo</p>
+            </div>
+        </div>
+    </div>
+    <!-- ./col -->
+    <div class="col-sm">
+        <!-- small box -->
+        <div class="small-box bg-warning" style="margin:10px">
+            <div class="inner">
+                <h3>{{context.teleop_avg}}<sup style="font-size: 20px"></sup></h3>
+
+                <p>Average points scored from teleop cargo</p>
+            </div>
+        </div>
+    </div>
+    <!-- ./col -->
+    <!-- ./col -->
+    <div class="col-sm">
+        <!-- small box -->
+        <div class="small-box bg-warning" style="margin:10px">
+            <div class="inner">
+                <h3>{{context.climb_avg}}</h3>
+
+                <p>Average climb level</p>
+            </div>
+        </div>
+    </div>
+    <!-- ./col -->
+</div>
+<div class="row">
+    <div class="col-sm">
+        <!-- small box -->
+        <div class="small-box bg-warning" style="margin:10px">
+            <div class="inner">
+                <h3>{{context.auto_acc}}</h3>
+
+                <p>Average auto cargo accuracy</p>
+            </div>
+        </div>
+    </div>
+    <!-- ./col -->
+    <div class="col-sm">
+        <!-- small box -->
+        <div class="small-box bg-warning" style="margin:10px">
+            <div class="inner">
+                <h3>{{context.tele_acc}}<sup style="font-size: 20px"></sup></h3>
+
+                <p>Average teleop cargo accuracy</p>
+            </div>
+        </div>
+    </div>
+    <!-- ./col -->
+    <!-- ./col -->
+    <div class="col-sm">
+        <!-- small box -->
+        <div class="small-box bg-warning" style="margin:10px">
+            <div class="inner">
+                <h3>{{context.defense}}</h3>
+
+                <p>Average defense rating</p>
+            </div>
+        </div>
+    </div>
+    <!-- ./col -->
+</div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-6-graph" style="margin:auto">
+            <div class="chart" id="team-graph">
+            </div>
+        </div>
+            
+
+</div>
+</div>
+<script>
+    var graphs = {{ context.teamgraph | safe }};
+    Plotly.plot('team-graph', graphs, {});
+</script>
+<!-- {% endblock my_content %} -->

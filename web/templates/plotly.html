@@ -1,0 +1,97 @@
+{% extends "layout.html" %}
+{% block script %}
+<!-- 
+put your custom script or styling here
+
+-->
+{% endblock script %}
+
+
+{% block my_content %}
+<div class="row">
+    <div class="col-sm">
+        <!-- small box -->
+        <div class="small-box bg-warning" style="margin:10px">
+            <div class="inner">
+                <h3>{{context.auto_average}}</h3>
+
+                <p>Average points scored from auto cargo</p>
+            </div>
+        </div>
+    </div>
+    <!-- ./col -->
+    <div class="col-sm">
+        <!-- small box -->
+        <div class="small-box bg-warning" style="margin:10px">
+            <div class="inner">
+                <h3>{{context.teleop_average}}<sup style="font-size: 20px"></sup></h3>
+
+                <p>Average points scored from teleop cargo</p>
+            </div>
+        </div>
+    </div>
+    <!-- ./col -->
+    <!-- ./col -->
+    <div class="col-sm">
+        <!-- small box -->
+        <div class="small-box bg-warning" style="margin:10px">
+            <div class="inner">
+                <h3>{{context.climb_average}}</h3>
+
+                <p>Average climb level</p>
+            </div>
+        </div>
+    </div>
+    <!-- ./col -->
+</div>
+<div class="row">
+    <div class="col-sm">
+        <!-- small box -->
+        <div class="small-box bg-warning" style="margin:10px">
+            <div class="inner">
+                <h3>{{context.auto_accuracy}}</h3>
+
+                <p>Average auto cargo accuracy</p>
+            </div>
+        </div>
+    </div>
+    <!-- ./col -->
+    <div class="col-sm">
+        <!-- small box -->
+        <div class="small-box bg-warning" style="margin:10px">
+            <div class="inner">
+                <h3>{{context.teleop_accuracy}}<sup style="font-size: 20px"></sup></h3>
+
+                <p>Average teleop cargo accuracy</p>
+            </div>
+        </div>
+    </div>
+    <!-- ./col -->
+    <!-- ./col -->
+    <div class="col-sm">
+        <!-- small box -->
+        <div class="small-box bg-warning" style="margin:10px">
+            <div class="inner">
+                <h3>{{context.matches}}</h3>
+
+                <p>Matches complete</p>
+            </div>
+        </div>
+    </div>
+    <!-- ./col -->
+</div>
+<div class="container-fluid">
+    <div class="row">
+            <div class="col-6-graph" style="margin:auto">
+                <div class="chart" id="full-graph">
+                </div>
+            </div>
+
+
+</div>
+</div>
+<script>
+    var graphs = {{ context.teleop_avg | safe }};
+    Plotly.plot('full-graph', graphs, {});
+</script>
+{% endblock my_content %}
