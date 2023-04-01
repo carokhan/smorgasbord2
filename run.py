@@ -1,9 +1,12 @@
 from web import app
 import sys
 
-if sys.argv[1] != "80":
-    port = int(sys.argv[1])
-else:
+try:
+    if sys.argv[1] != "80":
+        port = int(sys.argv[1])
+    else:
+        port = 80
+except IndexError:
     port = 80
 
 if __name__ == '__main__':
