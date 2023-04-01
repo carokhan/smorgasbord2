@@ -73,7 +73,7 @@
 </div>
 </div>
 <script>
-    var graphs = {{ context.teamgraph | safe }};
+    var graphs = {{ context.graph | safe }};
     Plotly.plot('team-graph', graphs, {});
 </script> 
 <!-- {% endblock my_content %}
