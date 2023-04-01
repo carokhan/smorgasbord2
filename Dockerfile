@@ -1,8 +1,7 @@
 FROM python:3.11.0
-COPY . /app
-WORKDIR /app
+WORKDIR /
 RUN pip install -r requirements.txt
 ENTRYPOINT ["python"]
-CMD ["main.py"]
+CMD ["run.py"]
 
 EXPOSE 80
