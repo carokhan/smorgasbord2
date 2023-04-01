@@ -9,6 +9,7 @@ import web.utils.graphs as graphs
 with open("data/teams.yaml", "r") as f:
     teamnames = yaml.load(f, Loader=yaml.Loader)
 
+
 @app.route("/")
 def main_page():
     data = data_tools.load_data()
@@ -27,14 +28,20 @@ def main_page():
     matches = data["matchNum"].max()
 
     graph = graphs.overall_event(data)
-    
-    context = {"auto_average": auto_average,
-               "teleop_average": teleop_average, "charge_average": charge_average, "cycles": cycles,
-            'matches': matches, "team_list": sorted(list(teams.values())), 'graph': graph}
-    return render_template('main.html', context=context)
+
+    context = {
+        "auto_average": auto_average,
+        "teleop_average": teleop_average,
+        "charge_average": charge_average,
+        "cycles": cycles,
+        "matches": matches,
+        "team_list": sorted(list(teams.values())),
+        "graph": graph,
+    }
+    return render_template("main.html", context=context)
 
 
-@app.route("/team", methods=['POST'])
+@app.route("/team", methods=["POST"])
 def plot_team():
     data = data_tools.load_data()
 
@@ -45,7 +52,7 @@ def plot_team():
         except KeyError:
             data = data[data.teamNumber != num]
 
-    team = request.form['team_name'].split(" ")[0]
+    team = request.form["team_name"].split(" ")[0]
     name = teamnames[int(team)]
 
     lookup = lambda x: data[data.teamNumber == x]
@@ -60,7 +67,19 @@ def plot_team():
     cycle_avg = round(team_data["cycles"].mean(), 2)
 
     defense = round(team_data["defenseScore"].mean(), 2)
-    
-    context = {"name": name, "total_avg": "Average points: " + str(total_avg), "auto_avg": auto_avg, "teleop_avg": teleop_avg, "charge_avg": charge_avg, "cycle_avg": cycle_avg, "defense": defense, "team_list": sorted(list(teams.values()))}
-    
-    return render_template('team.html', context=context)
+
+    graph = graphs.by_team(team_data)
+
+    context = {
+        "name": name,
+        "total_avg": "Average points: " + str(total_avg),
+        "auto_avg": auto_avg,
+        "teleop_avg": teleop_avg,
+        "charge_avg": charge_avg,
+        "cycle_avg": cycle_avg,
+        "defense": defense,
+        "graph": graph,
+        "team_list": sorted(list(teams.values())),
+    }
+
+    return render_template("team.html", context=context)
