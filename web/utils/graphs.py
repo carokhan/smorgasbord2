@@ -51,16 +51,16 @@ def overall_event(df):
     return plot_json
 
 
-def teamplot(df):
+def by_team(df):
     fig = make_subplots(rows=3, cols=1,
                         shared_xaxes=True,
                         vertical_spacing=0.02)
 
-    fig.add_trace(go.Scatter(x=list(df["matchNum"]), y=list(df["autoPoints"]), name="auto cargo", hovertemplate="Match number: %{x}<br>Points scored from auto cargo: %{y}<br>"),row=3, col=1, )
+    fig.add_trace(go.Scatter(x=list(df["matchNum"]), y=list(df["autoPoints"]), name="auto points", hovertemplate="Match number: %{x}<br>Auto points: %{y}<br>"),row=3, col=1, )
 
-    fig.add_trace(go.Scatter(x=list(df["matchNum"]), y=list(df["telePoints"]),name="tele cargo", hovertemplate="Match number: %{x}<br>Points scored from teleop cargo: %{y}<br>"),row=2, col=1)
+    fig.add_trace(go.Scatter(x=list(df["matchNum"]), y=list(df["telePoints"]),name="tele points", hovertemplate="Match number: %{x}<br>Teleop points: %{y}<br>"),row=2, col=1)
 
-    fig.add_trace(go.Scatter(x=list(df["matchNum"]), y=list(df["climb"]),name="climb level", hovertemplate="Match number: %{x}<br>Climb level=: %{y}<br>"),row=1, col=1)
+    fig.add_trace(go.Scatter(x=list(df["matchNum"]), y=list(df["chargePoints"]),name="endgame level", hovertemplate="Match number: %{x}<br>Climb level=: %{y}<br>"),row=1, col=1)
 
     fig.update_layout(title={'text': "Team performance by each match",
                'y': 0.9,

@@ -60,7 +60,9 @@ def plot_team():
     cycle_avg = round(team_data["cycles"].mean(), 2)
 
     defense = round(team_data["defenseScore"].mean(), 2)
+
+    graph = graphs.by_team(team_data)
     
-    context = {"name": name, "total_avg": "Average points: " + str(total_avg), "auto_avg": auto_avg, "teleop_avg": teleop_avg, "charge_avg": charge_avg, "cycle_avg": cycle_avg, "defense": defense, "team_list": sorted(list(teams.values()))}
+    context = {"name": name, "total_avg": "Average points: " + str(total_avg), "auto_avg": auto_avg, "teleop_avg": teleop_avg, "charge_avg": charge_avg, "cycle_avg": cycle_avg, "defense": defense, "graph": graph, "team_list": sorted(list(teams.values()))}
     
     return render_template('team.html', context=context)
