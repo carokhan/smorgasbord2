@@ -27,12 +27,12 @@ def clean_data(df):
     return df
 
 
-def load_data(path=os.path.expanduser("~") + "/bluecheese/smorgasbord2/data"):
+def load_data(path="./data"):
 
     data = []
     files = [f for f in os.listdir(path) if f.endswith(".json")]
     for file in files:
-        with open(os.path.expanduser("~") + "/bluecheese/smorgasbord2/data/" + file, "r") as f:
+        with open("./data/" + file, "r") as f:
             js = json.load(f)    
         for entry in js["root"]:
             data.append(entry)
