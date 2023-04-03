@@ -1,9 +1,10 @@
 import pandas as pd
 import numpy as np
 from flask import render_template, request
+import yaml
+
 from web import app
 import web.utils.data as data_tools
-import yaml
 import web.utils.graphs as graphs
 
 with open("data/teams.yaml", "r") as f:
