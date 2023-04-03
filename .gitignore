@@ -1,4 +1,8 @@
 __pycache__/
 .vscode/
+<<<<<<< HEAD
 */__pycache__
 .env
+=======
+*/__pycache__
+>>>>>>> vagle2023

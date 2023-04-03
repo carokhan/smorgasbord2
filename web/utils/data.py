@@ -31,6 +31,11 @@ def load_data(path="./data"):
 
     data = []
     files = [f for f in os.listdir(path) if f.endswith(".json")]
+
+    if len(files) == 0:
+        print("No data found.")
+        return None
+
     for file in files:
         with open("./data/" + file, "r") as f:
             js = json.load(f)    

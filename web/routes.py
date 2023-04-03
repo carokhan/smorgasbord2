@@ -10,9 +10,12 @@ with open("data/teams.yaml", "r") as f:
     teamnames = yaml.load(f, Loader=yaml.Loader)
 
 
-@app.route("/event")
+@app.route("/")
 def main_page():
     data = data_tools.load_data()
+
+    if data is None:
+        return render_template("204.html")
 
     teams = {}
     for num in list(data["teamNumber"]):
@@ -38,7 +41,7 @@ def main_page():
         "team_list": sorted(list(teams.values())),
         "graph": graph,
     }
-    return render_template("event.html", context=context)
+    return render_template("main.html", context=context)
 
 
 @app.route("/team", methods=["POST"])
