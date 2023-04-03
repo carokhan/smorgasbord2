@@ -14,6 +14,9 @@ with open("data/teams.yaml", "r") as f:
 def main_page():
     data = data_tools.load_data()
 
+    if data is None:
+        return render_template("204.html")
+
     teams = {}
     for num in list(data["teamNumber"]):
         try:
