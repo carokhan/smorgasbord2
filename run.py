@@ -1,5 +1,8 @@
 from web import app
 import sys
+from dotenv import load_dotenv
+
+load_dotenv()
 
 try:
     if sys.argv[1] != "80":
