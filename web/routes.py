@@ -15,7 +15,10 @@ def main_page():
     data = data_tools.load_data()
 
     if data is None:
-        return render_template("204.html")
+        context = {
+        "team_list": [],
+    }
+        return render_template("204.html", context=context)
 
     teams = {}
     for num in list(data["teamNumber"]):
