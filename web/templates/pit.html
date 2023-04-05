@@ -42,31 +42,45 @@ put your custom script or styling here
                 <th>{{col}}</th>
                 {% endif %}
                 {% endfor %}
+                <th>Insights</th>
             </tr>
             {% for row in context.rows %}
             <tr>
                 {% for col, value in context.zip(context.columns, row) %}
                 <td>
-                    
+
 
                     {% if "Red" in col %}
-                        <span style="color:crimson">
-                    {% elif "Blue" in col %}
+                    <span style="color:crimson">
+                        {% elif "Blue" in col %}
                         <span style="color:dodgerblue">
-                    {% else %}
-                        <span>
-                    {% endif %}
+                            {% else %}
+                            <span>
+                                {% endif %}
 
-                    {% if value == context.team %}
-                        <span style="font-weight: 1000">
-                    {% else %}
-                        <span>
-                    {% endif %}
-                    {{value}}</span>
-                        </span>
+                                {% if value == context.team %}
+                                <span style="font-weight: 1000">
+                                    {% else %}
+                                    <span>
+                                        {% endif %}
+                                        {{value}}</span>
+                                </span>
 
                 </td>
                 {% endfor %}
+                <td>
+                    <form style="display: none" action="playground" method="post">
+                        {% for col, value in context.zip(context.columns, row) %}
+                        {% if "e" in col %}
+                        <select name="{{context.table_fields[col]}}" id="{{context.table_fields[col]}}" required="required" style="width:200px" autocomplete="on">
+                            <option value="{{value}}" label="{{value}}" selected="selected">{{value}}</option>
+                        </select>
+                        {% endif %}
+                        {% endfor %}
+                        <button type="submit" id="playground"></button>
+                    </form>
+                    <label style="text-decoration: underline" for="playground">↗</label>
+                </td>
             </tr>
             {% endfor %}
 

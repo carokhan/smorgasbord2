@@ -212,6 +212,8 @@ def pit_page():
         "Blue 3": blue3,
         "ETA": etas,
     }
+    table_fields = {field: field.split(" ")[0].lower() + field.split(" ")[1] for field in list(schedule.keys()) if "e" in field}
+
     df = pd.DataFrame(schedule)
 
     context = {
@@ -224,6 +226,7 @@ def pit_page():
         "team": str(config["TEAM"]),
         "columns": df.columns.values,
         "rows": list(df.values.tolist()),
+        "table_fields": table_fields,
         "zip": zip,
         "time": datetime.now().strftime("%H:%M:%S"),
         "team_list": sorted(list(teams.values())),
@@ -274,7 +277,10 @@ def alliance_page():
     red_dfs = [lookup(int(team)) for team in red_alliance]
     blue_dfs = [lookup(int(team)) for team in blue_alliance]
 
-    graph = graphs.alliance_graph(red_dfs, blue_dfs)
+    try:
+        graph = graphs.alliance_graph(red_dfs, blue_dfs)
+    except ValueError:
+        graph = None
 
     context = {
         "red1": red_alliance[0],

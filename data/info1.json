@@ -1,0 +1,1579 @@
+{
+    "root": [
+        {
+            "teamNumber": "1522",
+            "defenseScore": "3",
+            "offenseScore": "1",
+            "tipped": "false",
+            "matchNum": "1",
+            "auto": {
+                "autoMove": "true",
+                "autoBottomScore": "1",
+                "autoMiddleScore": "0",
+                "autoTopScore": "0",
+                "autoDockedState": "on platform"
+            },
+            "teleop": {
+                "scoredBoth": "false",
+                "teleopBottomScore": "0",
+                "teleopMiddleScore": "0",
+                "teleopTopScore": "0",
+                "teleopDockState": "balance platform"
+            }
+        },
+        {
+            "teamNumber": "6802",
+            "defenseScore": "1",
+            "offenseScore": "1",
+            "tipped": "false",
+            "matchNum": "2",
+            "auto": {
+                "autoMove": "true",
+                "autoBottomScore": "0",
+                "autoMiddleScore": "0",
+                "autoTopScore": "1",
+                "autoDockedState": "balance platform"
+            },
+            "teleop": {
+                "scoredBoth": "true",
+                "teleopBottomScore": "0",
+                "teleopMiddleScore": "3",
+                "teleopTopScore": "0",
+                "teleopDockState": "in community"
+            }
+        },
+        {
+            "teamNumber": "2106",
+            "defenseScore": "1",
+            "offenseScore": "1",
+            "tipped": "false",
+            "matchNum": "3",
+            "auto": {
+                "autoMove": "true",
+                "autoBottomScore": "0",
+                "autoMiddleScore": "0",
+                "autoTopScore": "1",
+                "autoDockedState": "on platform"
+            },
+            "teleop": {
+                "scoredBoth": "false",
+                "teleopBottomScore": "1",
+                "teleopMiddleScore": "0",
+                "teleopTopScore": "2",
+                "teleopDockState": "balance platform"
+            }
+        },
+        {
+            "teamNumber": "1086",
+            "defenseScore": "3",
+            "offenseScore": "2",
+            "tipped": "false",
+            "matchNum": "4",
+            "auto": {
+                "autoMove": "false",
+                "autoBottomScore": "0",
+                "autoMiddleScore": "0",
+                "autoTopScore": "0",
+                "autoDockedState": "neither"
+            },
+            "teleop": {
+                "scoredBoth": "false",
+                "teleopBottomScore": "1",
+                "teleopMiddleScore": "0",
+                "teleopTopScore": "0",
+                "teleopDockState": "balance platform"
+            }
+        },
+        {
+            "teamNumber": "5243",
+            "defenseScore": "1",
+            "offenseScore": "1",
+            "tipped": "false",
+            "matchNum": "5",
+            "auto": {
+                "autoMove": "true",
+                "autoBottomScore": "1",
+                "autoMiddleScore": "0",
+                "autoTopScore": "0",
+                "autoDockedState": "on platform"
+            },
+            "teleop": {
+                "scoredBoth": "true",
+                "teleopBottomScore": "1",
+                "teleopMiddleScore": "1",
+                "teleopTopScore": "0",
+                "teleopDockState": "on platform"
+            }
+        },
+        {
+            "teamNumber": "8590",
+            "defenseScore": "1",
+            "offenseScore": "3",
+            "tipped": "false",
+            "matchNum": "6",
+            "auto": {
+                "autoMove": "true",
+                "autoBottomScore": "0",
+                "autoMiddleScore": "0",
+                "autoTopScore": "1",
+                "autoDockedState": "on platform"
+            },
+            "teleop": {
+                "scoredBoth": "true",
+                "teleopBottomScore": "0",
+                "teleopMiddleScore": "0",
+                "teleopTopScore": "3",
+                "teleopDockState": "balance platform"
+            }
+        },
+        {
+            "teamNumber": "4472",
+            "defenseScore": "2",
+            "offenseScore": "4",
+            "tipped": "false",
+            "matchNum": "7",
+            "auto": {
+                "autoMove": "true",
+                "autoBottomScore": "0",
+                "autoMiddleScore": "0",
+                "autoTopScore": "1",
+                "autoDockedState": "balance platform"
+            },
+            "teleop": {
+                "scoredBoth": "true",
+                "teleopBottomScore": "1",
+                "teleopMiddleScore": "0",
+                "teleopTopScore": "3",
+                "teleopDockState": "on platform"
+            }
+        },
+        {
+            "teamNumber": "404",
+            "defenseScore": "1",
+            "offenseScore": "4",
+            "tipped": "false",
+            "matchNum": "8",
+            "auto": {
+                "autoMove": "true",
+                "autoBottomScore": "1",
+                "autoMiddleScore": "0",
+                "autoTopScore": "0",
+                "autoDockedState": "neither"
+            },
+            "teleop": {
+                "scoredBoth": "false",
+                "teleopBottomScore": "0",
+                "teleopMiddleScore": "1",
+                "teleopTopScore": "2",
+                "teleopDockState": "balance platform"
+            }
+        },
+        {
+            "teamNumber": "5243",
+            "defenseScore": "1",
+            "offenseScore": "1",
+            "tipped": "false",
+            "matchNum": "9",
+            "auto": {
+                "autoMove": "true",
+                "autoBottomScore": "0",
+                "autoMiddleScore": "0",
+                "autoTopScore": "0",
+                "autoDockedState": "neither"
+            },
+            "teleop": {
+                "scoredBoth": "false",
+                "teleopBottomScore": "1",
+                "teleopMiddleScore": "0",
+                "teleopTopScore": "0",
+                "teleopDockState": "balance platform"
+            }
+        },
+        {
+            "teamNumber": "422",
+            "defenseScore": "1",
+            "offenseScore": "1",
+            "tipped": "false",
+            "matchNum": "10",
+            "auto": {
+                "autoMove": "true",
+                "autoBottomScore": "1",
+                "autoMiddleScore": "0",
+                "autoTopScore": "1",
+                "autoDockedState": "balance platform"
+            },
+            "teleop": {
+                "scoredBoth": "true",
+                "teleopBottomScore": "5",
+                "teleopMiddleScore": "3",
+                "teleopTopScore": "0",
+                "teleopDockState": "in community"
+            }
+        },
+        {
+            "teamNumber": "1086",
+            "defenseScore": "1",
+            "offenseScore": "1",
+            "tipped": "false",
+            "matchNum": "11",
+            "auto": {
+                "autoMove": "true",
+                "autoBottomScore": "1",
+                "autoMiddleScore": "0",
+                "autoTopScore": "0",
+                "autoDockedState": "neither"
+            },
+            "teleop": {
+                "scoredBoth": "false",
+                "teleopBottomScore": "0",
+                "teleopMiddleScore": "0",
+                "teleopTopScore": "0",
+                "teleopDockState": "balance platform"
+            }
+        },
+        {
+            "teamNumber": "539",
+            "defenseScore": "1",
+            "offenseScore": "1",
+            "tipped": "false",
+            "matchNum": "12",
+            "auto": {
+                "autoMove": "true",
+                "autoBottomScore": "1",
+                "autoMiddleScore": "0",
+                "autoTopScore": "0",
+                "autoDockedState": "neither"
+            },
+            "teleop": {
+                "scoredBoth": "false",
+                "teleopBottomScore": "0",
+                "teleopMiddleScore": "0",
+                "teleopTopScore": "0",
+                "teleopDockState": "on platform"
+            }
+        },
+        {
+            "teamNumber": "5724",
+            "defenseScore": "1",
+            "offenseScore": "5",
+            "tipped": "false",
+            "matchNum": "13",
+            "auto": {
+                "autoMove": "true",
+                "autoBottomScore": "0",
+                "autoMiddleScore": "0",
+                "autoTopScore": "2",
+                "autoDockedState": "neither"
+            },
+            "teleop": {
+                "scoredBoth": "true",
+                "teleopBottomScore": "1",
+                "teleopMiddleScore": "0",
+                "teleopTopScore": "4",
+                "teleopDockState": "balance platform"
+            }
+        },
+        {
+            "teamNumber": "9003",
+            "defenseScore": "2",
+            "offenseScore": "3",
+            "tipped": "false",
+            "matchNum": "14",
+            "auto": {
+                "autoMove": "true",
+                "autoBottomScore": "0",
+                "autoMiddleScore": "1",
+                "autoTopScore": "0",
+                "autoDockedState": "neither"
+            },
+            "teleop": {
+                "scoredBoth": "false",
+                "teleopBottomScore": "1",
+                "teleopMiddleScore": "0",
+                "teleopTopScore": "2",
+                "teleopDockState": "on platform"
+            }
+        },
+        {
+            "teamNumber": "1610",
+            "defenseScore": "2",
+            "offenseScore": "2",
+            "tipped": "false",
+            "matchNum": "15",
+            "auto": {
+                "autoMove": "true",
+                "autoBottomScore": "0",
+                "autoMiddleScore": "0",
+                "autoTopScore": "1",
+                "autoDockedState": "neither"
+            },
+            "teleop": {
+                "scoredBoth": "false",
+                "teleopBottomScore": "1",
+                "teleopMiddleScore": "0",
+                "teleopTopScore": "0",
+                "teleopDockState": "balance platform"
+            }
+        },
+        {
+            "teamNumber": "339",
+            "defenseScore": "1",
+            "offenseScore": "1",
+            "tipped": "false",
+            "matchNum": "1",
+            "auto": {
+                "autoMove": "true",
+                "autoBottomScore": "0",
+                "autoMiddleScore": "0",
+                "autoTopScore": "0",
+                "autoDockedState": "neither"
+            },
+            "teleop": {
+                "scoredBoth": "false",
+                "teleopBottomScore": "1",
+                "teleopMiddleScore": "0",
+                "teleopTopScore": "0",
+                "teleopDockState": "balance platform"
+            }
+        },
+        {
+            "teamNumber": "4286",
+            "defenseScore": "1",
+            "offenseScore": "1",
+            "tipped": "false",
+            "matchNum": "2",
+            "auto": {
+                "autoMove": "false",
+                "autoBottomScore": "0",
+                "autoMiddleScore": "0",
+                "autoTopScore": "0",
+                "autoDockedState": "neither"
+            },
+            "teleop": {
+                "scoredBoth": "false",
+                "teleopBottomScore": "0",
+                "teleopMiddleScore": "0",
+                "teleopTopScore": "2",
+                "teleopDockState": "neither"
+            }
+        },
+        {
+            "teamNumber": "2068",
+            "defenseScore": "1",
+            "offenseScore": "1",
+            "tipped": "false",
+            "matchNum": "3",
+            "auto": {
+                "autoMove": "true",
+                "autoBottomScore": "0",
+                "autoMiddleScore": "0",
+                "autoTopScore": "0",
+                "autoDockedState": "neither"
+            },
+            "teleop": {
+                "scoredBoth": "false",
+                "teleopBottomScore": "0",
+                "teleopMiddleScore": "0",
+                "teleopTopScore": "0",
+                "teleopDockState": "neither"
+            }
+        },
+        {
+            "teamNumber": "5243",
+            "defenseScore": "3",
+            "offenseScore": "2",
+            "tipped": "false",
+            "matchNum": "4",
+            "auto": {
+                "autoMove": "true",
+                "autoBottomScore": "0",
+                "autoMiddleScore": "0",
+                "autoTopScore": "0",
+                "autoDockedState": "neither"
+            },
+            "teleop": {
+                "scoredBoth": "false",
+                "teleopBottomScore": "1",
+                "teleopMiddleScore": "0",
+                "teleopTopScore": "0",
+                "teleopDockState": "balance platform"
+            }
+        },
+        {
+            "teamNumber": "",
+            "defenseScore": "1",
+            "offenseScore": "1",
+            "tipped": "false",
+            "matchNum": "5",
+            "auto": {
+                "autoMove": "false",
+                "autoBottomScore": "0",
+                "autoMiddleScore": "0",
+                "autoTopScore": "0",
+                "autoDockedState": "neither"
+            },
+            "teleop": {
+                "scoredBoth": "false",
+                "teleopBottomScore": "0",
+                "teleopMiddleScore": "0",
+                "teleopTopScore": "0",
+                "teleopDockState": "neither"
+            }
+        },
+        {
+            "teamNumber": "",
+            "defenseScore": "1",
+            "offenseScore": "1",
+            "tipped": "false",
+            "matchNum": "6",
+            "auto": {
+                "autoMove": "false",
+                "autoBottomScore": "0",
+                "autoMiddleScore": "0",
+                "autoTopScore": "0",
+                "autoDockedState": "neither"
+            },
+            "teleop": {
+                "scoredBoth": "false",
+                "teleopBottomScore": "0",
+                "teleopMiddleScore": "0",
+                "teleopTopScore": "0",
+                "teleopDockState": "neither"
+            }
+        },
+        {
+            "teamNumber": "",
+            "defenseScore": "1",
+            "offenseScore": "1",
+            "tipped": "false",
+            "matchNum": "7",
+            "auto": {
+                "autoMove": "false",
+                "autoBottomScore": "0",
+                "autoMiddleScore": "0",
+                "autoTopScore": "0",
+                "autoDockedState": "neither"
+            },
+            "teleop": {
+                "scoredBoth": "false",
+                "teleopBottomScore": "0",
+                "teleopMiddleScore": "0",
+                "teleopTopScore": "0",
+                "teleopDockState": "neither"
+            }
+        },
+        {
+            "teamNumber": "",
+            "defenseScore": "1",
+            "offenseScore": "1",
+            "tipped": "false",
+            "matchNum": "8",
+            "auto": {
+                "autoMove": "false",
+                "autoBottomScore": "0",
+                "autoMiddleScore": "0",
+                "autoTopScore": "0",
+                "autoDockedState": "neither"
+            },
+            "teleop": {
+                "scoredBoth": "false",
+                "teleopBottomScore": "0",
+                "teleopMiddleScore": "0",
+                "teleopTopScore": "0",
+                "teleopDockState": "neither"
+            }
+        },
+        {
+            "teamNumber": "",
+            "defenseScore": "1",
+            "offenseScore": "1",
+            "tipped": "false",
+            "matchNum": "9",
+            "auto": {
+                "autoMove": "false",
+                "autoBottomScore": "0",
+                "autoMiddleScore": "0",
+                "autoTopScore": "0",
+                "autoDockedState": "neither"
+            },
+            "teleop": {
+                "scoredBoth": "false",
+                "teleopBottomScore": "0",
+                "teleopMiddleScore": "0",
+                "teleopTopScore": "0",
+                "teleopDockState": "neither"
+            }
+        },
+        {
+            "teamNumber": "",
+            "defenseScore": "1",
+            "offenseScore": "1",
+            "tipped": "false",
+            "matchNum": "10",
+            "auto": {
+                "autoMove": "false",
+                "autoBottomScore": "0",
+                "autoMiddleScore": "0",
+                "autoTopScore": "0",
+                "autoDockedState": "neither"
+            },
+            "teleop": {
+                "scoredBoth": "false",
+                "teleopBottomScore": "0",
+                "teleopMiddleScore": "0",
+                "teleopTopScore": "0",
+                "teleopDockState": "neither"
+            }
+        },
+        {
+            "teamNumber": "",
+            "defenseScore": "1",
+            "offenseScore": "1",
+            "tipped": "false",
+            "matchNum": "11",
+            "auto": {
+                "autoMove": "false",
+                "autoBottomScore": "0",
+                "autoMiddleScore": "0",
+                "autoTopScore": "0",
+                "autoDockedState": "neither"
+            },
+            "teleop": {
+                "scoredBoth": "false",
+                "teleopBottomScore": "0",
+                "teleopMiddleScore": "0",
+                "teleopTopScore": "0",
+                "teleopDockState": "neither"
+            }
+        },
+        {
+            "teamNumber": "",
+            "defenseScore": "1",
+            "offenseScore": "1",
+            "tipped": "false",
+            "matchNum": "12",
+            "auto": {
+                "autoMove": "false",
+                "autoBottomScore": "0",
+                "autoMiddleScore": "0",
+                "autoTopScore": "0",
+                "autoDockedState": "neither"
+            },
+            "teleop": {
+                "scoredBoth": "false",
+                "teleopBottomScore": "0",
+                "teleopMiddleScore": "0",
+                "teleopTopScore": "0",
+                "teleopDockState": "neither"
+            }
+        },
+        {
+            "teamNumber": "",
+            "defenseScore": "1",
+            "offenseScore": "1",
+            "tipped": "false",
+            "matchNum": "13",
+            "auto": {
+                "autoMove": "false",
+                "autoBottomScore": "0",
+                "autoMiddleScore": "0",
+                "autoTopScore": "0",
+                "autoDockedState": "neither"
+            },
+            "teleop": {
+                "scoredBoth": "false",
+                "teleopBottomScore": "0",
+                "teleopMiddleScore": "0",
+                "teleopTopScore": "0",
+                "teleopDockState": "neither"
+            }
+        },
+        {
+            "teamNumber": "",
+            "defenseScore": "1",
+            "offenseScore": "1",
+            "tipped": "false",
+            "matchNum": "14",
+            "auto": {
+                "autoMove": "false",
+                "autoBottomScore": "0",
+                "autoMiddleScore": "0",
+                "autoTopScore": "0",
+                "autoDockedState": "neither"
+            },
+            "teleop": {
+                "scoredBoth": "false",
+                "teleopBottomScore": "0",
+                "teleopMiddleScore": "0",
+                "teleopTopScore": "0",
+                "teleopDockState": "neither"
+            }
+        },
+        {
+            "teamNumber": "",
+            "defenseScore": "1",
+            "offenseScore": "1",
+            "tipped": "false",
+            "matchNum": "15",
+            "auto": {
+                "autoMove": "false",
+                "autoBottomScore": "0",
+                "autoMiddleScore": "0",
+                "autoTopScore": "0",
+                "autoDockedState": "neither"
+            },
+            "teleop": {
+                "scoredBoth": "false",
+                "teleopBottomScore": "0",
+                "teleopMiddleScore": "0",
+                "teleopTopScore": "0",
+                "teleopDockState": "neither"
+            }
+        },
+        {
+            "teamNumber": "",
+            "defenseScore": "1",
+            "offenseScore": "1",
+            "tipped": "false",
+            "matchNum": "16",
+            "auto": {
+                "autoMove": "false",
+                "autoBottomScore": "0",
+                "autoMiddleScore": "0",
+                "autoTopScore": "0",
+                "autoDockedState": "neither"
+            },
+            "teleop": {
+                "scoredBoth": "false",
+                "teleopBottomScore": "0",
+                "teleopMiddleScore": "0",
+                "teleopTopScore": "0",
+                "teleopDockState": "neither"
+            }
+        },
+        {
+            "teamNumber": "",
+            "defenseScore": "1",
+            "offenseScore": "1",
+            "tipped": "false",
+            "matchNum": "17",
+            "auto": {
+                "autoMove": "false",
+                "autoBottomScore": "0",
+                "autoMiddleScore": "0",
+                "autoTopScore": "0",
+                "autoDockedState": "neither"
+            },
+            "teleop": {
+                "scoredBoth": "false",
+                "teleopBottomScore": "0",
+                "teleopMiddleScore": "0",
+                "teleopTopScore": "0",
+                "teleopDockState": "neither"
+            }
+        },
+        {
+            "teamNumber": "",
+            "defenseScore": "1",
+            "offenseScore": "1",
+            "tipped": "false",
+            "matchNum": "18",
+            "auto": {
+                "autoMove": "false",
+                "autoBottomScore": "0",
+                "autoMiddleScore": "0",
+                "autoTopScore": "0",
+                "autoDockedState": "neither"
+            },
+            "teleop": {
+                "scoredBoth": "false",
+                "teleopBottomScore": "0",
+                "teleopMiddleScore": "0",
+                "teleopTopScore": "0",
+                "teleopDockState": "neither"
+            }
+        },
+        {
+            "teamNumber": "",
+            "defenseScore": "1",
+            "offenseScore": "1",
+            "tipped": "false",
+            "matchNum": "19",
+            "auto": {
+                "autoMove": "false",
+                "autoBottomScore": "0",
+                "autoMiddleScore": "0",
+                "autoTopScore": "0",
+                "autoDockedState": "neither"
+            },
+            "teleop": {
+                "scoredBoth": "false",
+                "teleopBottomScore": "0",
+                "teleopMiddleScore": "0",
+                "teleopTopScore": "0",
+                "teleopDockState": "neither"
+            }
+        },
+        {
+            "teamNumber": "",
+            "defenseScore": "1",
+            "offenseScore": "1",
+            "tipped": "false",
+            "matchNum": "20",
+            "auto": {
+                "autoMove": "false",
+                "autoBottomScore": "0",
+                "autoMiddleScore": "0",
+                "autoTopScore": "0",
+                "autoDockedState": "neither"
+            },
+            "teleop": {
+                "scoredBoth": "false",
+                "teleopBottomScore": "0",
+                "teleopMiddleScore": "0",
+                "teleopTopScore": "0",
+                "teleopDockState": "neither"
+            }
+        },
+        {
+            "teamNumber": "",
+            "defenseScore": "1",
+            "offenseScore": "1",
+            "tipped": "false",
+            "matchNum": "21",
+            "auto": {
+                "autoMove": "false",
+                "autoBottomScore": "0",
+                "autoMiddleScore": "0",
+                "autoTopScore": "0",
+                "autoDockedState": "neither"
+            },
+            "teleop": {
+                "scoredBoth": "false",
+                "teleopBottomScore": "0",
+                "teleopMiddleScore": "0",
+                "teleopTopScore": "0",
+                "teleopDockState": "neither"
+            }
+        },
+        {
+            "teamNumber": "1610",
+            "defenseScore": "4",
+            "offenseScore": "4",
+            "tipped": "false",
+            "matchNum": "22",
+            "auto": {
+                "autoMove": "true",
+                "autoBottomScore": "0",
+                "autoMiddleScore": "0",
+                "autoTopScore": "0",
+                "autoDockedState": "neither"
+            },
+            "teleop": {
+                "scoredBoth": "true",
+                "teleopBottomScore": "0",
+                "teleopMiddleScore": "0",
+                "teleopTopScore": "4",
+                "teleopDockState": "neither"
+            }
+        },
+        {
+            "teamNumber": "4286",
+            "defenseScore": "1",
+            "offenseScore": "1",
+            "tipped": "false",
+            "matchNum": "23",
+            "auto": {
+                "autoMove": "false",
+                "autoBottomScore": "0",
+                "autoMiddleScore": "0",
+                "autoTopScore": "0",
+                "autoDockedState": "neither"
+            },
+            "teleop": {
+                "scoredBoth": "false",
+                "teleopBottomScore": "0",
+                "teleopMiddleScore": "0",
+                "teleopTopScore": "0",
+                "teleopDockState": "neither"
+            }
+        },
+        {
+            "teamNumber": "1599",
+            "defenseScore": "2",
+            "offenseScore": "5",
+            "tipped": "false",
+            "matchNum": "24",
+            "auto": {
+                "autoMove": "true",
+                "autoBottomScore": "0",
+                "autoMiddleScore": "0",
+                "autoTopScore": "0",
+                "autoDockedState": "balance platform"
+            },
+            "teleop": {
+                "scoredBoth": "true",
+                "teleopBottomScore": "0",
+                "teleopMiddleScore": "0",
+                "teleopTopScore": "4",
+                "teleopDockState": "balance platform"
+            }
+        },
+        {
+            "teamNumber": "5724",
+            "defenseScore": "1",
+            "offenseScore": "1",
+            "tipped": "false",
+            "matchNum": "25",
+            "auto": {
+                "autoMove": "false",
+                "autoBottomScore": "0",
+                "autoMiddleScore": "0",
+                "autoTopScore": "0",
+                "autoDockedState": "neither"
+            },
+            "teleop": {
+                "scoredBoth": "true",
+                "teleopBottomScore": "1",
+                "teleopMiddleScore": "2",
+                "teleopTopScore": "1",
+                "teleopDockState": "balance platform"
+            }
+        },
+        {
+            "teamNumber": "401",
+            "defenseScore": "1",
+            "offenseScore": "1",
+            "tipped": "false",
+            "matchNum": "26",
+            "auto": {
+                "autoMove": "true",
+                "autoBottomScore": "0",
+                "autoMiddleScore": "0",
+                "autoTopScore": "2",
+                "autoDockedState": "neither"
+            },
+            "teleop": {
+                "scoredBoth": "true",
+                "teleopBottomScore": "0",
+                "teleopMiddleScore": "2",
+                "teleopTopScore": "6",
+                "teleopDockState": "balance platform"
+            }
+        },
+        {
+            "teamNumber": "8590",
+            "defenseScore": "1",
+            "offenseScore": "2",
+            "tipped": "false",
+            "matchNum": "27",
+            "auto": {
+                "autoMove": "true",
+                "autoBottomScore": "0",
+                "autoMiddleScore": "0",
+                "autoTopScore": "1",
+                "autoDockedState": "neither"
+            },
+            "teleop": {
+                "scoredBoth": "true",
+                "teleopBottomScore": "0",
+                "teleopMiddleScore": "0",
+                "teleopTopScore": "2",
+                "teleopDockState": "neither"
+            }
+        },
+        {
+            "teamNumber": "3939",
+            "defenseScore": "1",
+            "offenseScore": "1",
+            "tipped": "false",
+            "matchNum": "28",
+            "auto": {
+                "autoMove": "true",
+                "autoBottomScore": "0",
+                "autoMiddleScore": "0",
+                "autoTopScore": "1",
+                "autoDockedState": "neither"
+            },
+            "teleop": {
+                "scoredBoth": "false",
+                "teleopBottomScore": "4",
+                "teleopMiddleScore": "0",
+                "teleopTopScore": "1",
+                "teleopDockState": "neither"
+            }
+        },
+        {
+            "teamNumber": "1793",
+            "defenseScore": "1",
+            "offenseScore": "1",
+            "tipped": "false",
+            "matchNum": "29",
+            "auto": {
+                "autoMove": "true",
+                "autoBottomScore": "1",
+                "autoMiddleScore": "0",
+                "autoTopScore": "0",
+                "autoDockedState": "neither"
+            },
+            "teleop": {
+                "scoredBoth": "false",
+                "teleopBottomScore": "0",
+                "teleopMiddleScore": "0",
+                "teleopTopScore": "0",
+                "teleopDockState": "neither"
+            }
+        },
+        {
+            "teamNumber": "1123",
+            "defenseScore": "1",
+            "offenseScore": "1",
+            "tipped": "false",
+            "matchNum": "30",
+            "auto": {
+                "autoMove": "true",
+                "autoBottomScore": "1",
+                "autoMiddleScore": "0",
+                "autoTopScore": "0",
+                "autoDockedState": "neither"
+            },
+            "teleop": {
+                "scoredBoth": "false",
+                "teleopBottomScore": "1",
+                "teleopMiddleScore": "2",
+                "teleopTopScore": "2",
+                "teleopDockState": "balance platform"
+            }
+        },
+        {
+            "teamNumber": "6882",
+            "defenseScore": "1",
+            "offenseScore": "1",
+            "tipped": "false",
+            "matchNum": "31",
+            "auto": {
+                "autoMove": "true",
+                "autoBottomScore": "0",
+                "autoMiddleScore": "0",
+                "autoTopScore": "0",
+                "autoDockedState": "neither"
+            },
+            "teleop": {
+                "scoredBoth": "false",
+                "teleopBottomScore": "0",
+                "teleopMiddleScore": "0",
+                "teleopTopScore": "0",
+                "teleopDockState": "balance platform"
+            }
+        },
+        {
+            "teamNumber": "401",
+            "defenseScore": "1",
+            "offenseScore": "1",
+            "tipped": "false",
+            "matchNum": "32",
+            "auto": {
+                "autoMove": "true",
+                "autoBottomScore": "0",
+                "autoMiddleScore": "0",
+                "autoTopScore": "1",
+                "autoDockedState": "balance platform"
+            },
+            "teleop": {
+                "scoredBoth": "true",
+                "teleopBottomScore": "1",
+                "teleopMiddleScore": "2",
+                "teleopTopScore": "3",
+                "teleopDockState": "balance platform"
+            }
+        },
+        {
+            "teamNumber": "619",
+            "defenseScore": "2",
+            "offenseScore": "3",
+            "tipped": "false",
+            "matchNum": "33",
+            "auto": {
+                "autoMove": "true",
+                "autoBottomScore": "0",
+                "autoMiddleScore": "0",
+                "autoTopScore": "1",
+                "autoDockedState": "neither"
+            },
+            "teleop": {
+                "scoredBoth": "false",
+                "teleopBottomScore": "1",
+                "teleopMiddleScore": "0",
+                "teleopTopScore": "1",
+                "teleopDockState": "on platform"
+            }
+        },
+        {
+            "teamNumber": "449",
+            "defenseScore": "1",
+            "offenseScore": "4",
+            "tipped": "false",
+            "matchNum": "34",
+            "auto": {
+                "autoMove": "false",
+                "autoBottomScore": "0",
+                "autoMiddleScore": "0",
+                "autoTopScore": "0",
+                "autoDockedState": "neither"
+            },
+            "teleop": {
+                "scoredBoth": "false",
+                "teleopBottomScore": "1",
+                "teleopMiddleScore": "0",
+                "teleopTopScore": "1",
+                "teleopDockState": "balance platform"
+            }
+        },
+        {
+            "teamNumber": "2106",
+            "defenseScore": "2",
+            "offenseScore": "5",
+            "tipped": "false",
+            "matchNum": "35",
+            "auto": {
+                "autoMove": "true",
+                "autoBottomScore": "0",
+                "autoMiddleScore": "0",
+                "autoTopScore": "1",
+                "autoDockedState": "on platform"
+            },
+            "teleop": {
+                "scoredBoth": "true",
+                "teleopBottomScore": "2",
+                "teleopMiddleScore": "0",
+                "teleopTopScore": "2",
+                "teleopDockState": "balance platform"
+            }
+        },
+        {
+            "teamNumber": "539",
+            "defenseScore": "1",
+            "offenseScore": "1",
+            "tipped": "false",
+            "matchNum": "36",
+            "auto": {
+                "autoMove": "true",
+                "autoBottomScore": "0",
+                "autoMiddleScore": "0",
+                "autoTopScore": "0",
+                "autoDockedState": "neither"
+            },
+            "teleop": {
+                "scoredBoth": "false",
+                "teleopBottomScore": "0",
+                "teleopMiddleScore": "0",
+                "teleopTopScore": "1",
+                "teleopDockState": "balance platform"
+            }
+        },
+        {
+            "teamNumber": "346",
+            "defenseScore": "1",
+            "offenseScore": "4",
+            "tipped": "false",
+            "matchNum": "37",
+            "auto": {
+                "autoMove": "true",
+                "autoBottomScore": "0",
+                "autoMiddleScore": "0",
+                "autoTopScore": "0",
+                "autoDockedState": "neither"
+            },
+            "teleop": {
+                "scoredBoth": "false",
+                "teleopBottomScore": "6",
+                "teleopMiddleScore": "0",
+                "teleopTopScore": "0",
+                "teleopDockState": "in community"
+            }
+        },
+        {
+            "teamNumber": "5954",
+            "defenseScore": "1",
+            "offenseScore": "1",
+            "tipped": "false",
+            "matchNum": "38",
+            "auto": {
+                "autoMove": "true",
+                "autoBottomScore": "0",
+                "autoMiddleScore": "0",
+                "autoTopScore": "0",
+                "autoDockedState": "neither"
+            },
+            "teleop": {
+                "scoredBoth": "false",
+                "teleopBottomScore": "1",
+                "teleopMiddleScore": "0",
+                "teleopTopScore": "0",
+                "teleopDockState": "balance platform"
+            }
+        },
+        {
+            "teamNumber": "2998",
+            "defenseScore": "1",
+            "offenseScore": "1",
+            "tipped": "false",
+            "matchNum": "39",
+            "auto": {
+                "autoMove": "true",
+                "autoBottomScore": "1",
+                "autoMiddleScore": "0",
+                "autoTopScore": "0",
+                "autoDockedState": "neither"
+            },
+            "teleop": {
+                "scoredBoth": "false",
+                "teleopBottomScore": "0",
+                "teleopMiddleScore": "0",
+                "teleopTopScore": "0",
+                "teleopDockState": "neither"
+            }
+        },
+        {
+            "teamNumber": "3939",
+            "defenseScore": "2",
+            "offenseScore": "3",
+            "tipped": "false",
+            "matchNum": "40",
+            "auto": {
+                "autoMove": "true",
+                "autoBottomScore": "0",
+                "autoMiddleScore": "0",
+                "autoTopScore": "1",
+                "autoDockedState": "neither"
+            },
+            "teleop": {
+                "scoredBoth": "false",
+                "teleopBottomScore": "0",
+                "teleopMiddleScore": "1",
+                "teleopTopScore": "0",
+                "teleopDockState": "neither"
+            }
+        },
+        {
+            "teamNumber": "5804",
+            "defenseScore": "2",
+            "offenseScore": "5",
+            "tipped": "false",
+            "matchNum": "41",
+            "auto": {
+                "autoMove": "true",
+                "autoBottomScore": "0",
+                "autoMiddleScore": "0",
+                "autoTopScore": "1",
+                "autoDockedState": "balance platform"
+            },
+            "teleop": {
+                "scoredBoth": "true",
+                "teleopBottomScore": "0",
+                "teleopMiddleScore": "0",
+                "teleopTopScore": "5",
+                "teleopDockState": "on platform"
+            }
+        },
+        {
+            "teamNumber": "1522",
+            "defenseScore": "5",
+            "offenseScore": "1",
+            "tipped": "false",
+            "matchNum": "42",
+            "auto": {
+                "autoMove": "true",
+                "autoBottomScore": "0",
+                "autoMiddleScore": "0",
+                "autoTopScore": "0",
+                "autoDockedState": "balance platform"
+            },
+            "teleop": {
+                "scoredBoth": "false",
+                "teleopBottomScore": "0",
+                "teleopMiddleScore": "0",
+                "teleopTopScore": "0",
+                "teleopDockState": "balance platform"
+            }
+        },
+        {
+            "teamNumber": "2998",
+            "defenseScore": "1",
+            "offenseScore": "1",
+            "tipped": "false",
+            "matchNum": "43",
+            "auto": {
+                "autoMove": "false",
+                "autoBottomScore": "0",
+                "autoMiddleScore": "0",
+                "autoTopScore": "0",
+                "autoDockedState": "neither"
+            },
+            "teleop": {
+                "scoredBoth": "false",
+                "teleopBottomScore": "0",
+                "teleopMiddleScore": "0",
+                "teleopTopScore": "0",
+                "teleopDockState": "neither"
+            }
+        },
+        {
+            "teamNumber": "5243",
+            "defenseScore": "1",
+            "offenseScore": "1",
+            "tipped": "false",
+            "matchNum": "44",
+            "auto": {
+                "autoMove": "true",
+                "autoBottomScore": "0",
+                "autoMiddleScore": "0",
+                "autoTopScore": "0",
+                "autoDockedState": "neither"
+            },
+            "teleop": {
+                "scoredBoth": "false",
+                "teleopBottomScore": "0",
+                "teleopMiddleScore": "0",
+                "teleopTopScore": "0",
+                "teleopDockState": "neither"
+            }
+        },
+        {
+            "teamNumber": "5954",
+            "defenseScore": "1",
+            "offenseScore": "1",
+            "tipped": "false",
+            "matchNum": "45",
+            "auto": {
+                "autoMove": "true",
+                "autoBottomScore": "0",
+                "autoMiddleScore": "0",
+                "autoTopScore": "0",
+                "autoDockedState": "neither"
+            },
+            "teleop": {
+                "scoredBoth": "false",
+                "teleopBottomScore": "0",
+                "teleopMiddleScore": "0",
+                "teleopTopScore": "0",
+                "teleopDockState": "balance platform"
+            }
+        },
+        {
+            "teamNumber": "6802",
+            "defenseScore": "1",
+            "offenseScore": "4",
+            "tipped": "false",
+            "matchNum": "46",
+            "auto": {
+                "autoMove": "true",
+                "autoBottomScore": "0",
+                "autoMiddleScore": "0",
+                "autoTopScore": "1",
+                "autoDockedState": "neither"
+            },
+            "teleop": {
+                "scoredBoth": "true",
+                "teleopBottomScore": "0",
+                "teleopMiddleScore": "0",
+                "teleopTopScore": "3",
+                "teleopDockState": "balance platform"
+            }
+        },
+        {
+            "teamNumber": "2988",
+            "defenseScore": "1",
+            "offenseScore": "1",
+            "tipped": "false",
+            "matchNum": "47",
+            "auto": {
+                "autoMove": "true",
+                "autoBottomScore": "0",
+                "autoMiddleScore": "0",
+                "autoTopScore": "0",
+                "autoDockedState": "neither"
+            },
+            "teleop": {
+                "scoredBoth": "false",
+                "teleopBottomScore": "0",
+                "teleopMiddleScore": "0",
+                "teleopTopScore": "0",
+                "teleopDockState": "on platform"
+            }
+        },
+        {
+            "teamNumber": "8590",
+            "defenseScore": "1",
+            "offenseScore": "1",
+            "tipped": "false",
+            "matchNum": "48",
+            "auto": {
+                "autoMove": "true",
+                "autoBottomScore": "0",
+                "autoMiddleScore": "0",
+                "autoTopScore": "1",
+                "autoDockedState": "neither"
+            },
+            "teleop": {
+                "scoredBoth": "false",
+                "teleopBottomScore": "0",
+                "teleopMiddleScore": "0",
+                "teleopTopScore": "0",
+                "teleopDockState": "neither"
+            }
+        },
+        {
+            "teamNumber": "2890",
+            "defenseScore": "1",
+            "offenseScore": "4",
+            "tipped": "false",
+            "matchNum": "49",
+            "auto": {
+                "autoMove": "true",
+                "autoBottomScore": "0",
+                "autoMiddleScore": "0",
+                "autoTopScore": "0",
+                "autoDockedState": "neither"
+            },
+            "teleop": {
+                "scoredBoth": "true",
+                "teleopBottomScore": "2",
+                "teleopMiddleScore": "2",
+                "teleopTopScore": "0",
+                "teleopDockState": "balance platform"
+            }
+        },
+        {
+            "teamNumber": "339",
+            "defenseScore": "1",
+            "offenseScore": "1",
+            "tipped": "false",
+            "matchNum": "50",
+            "auto": {
+                "autoMove": "false",
+                "autoBottomScore": "1",
+                "autoMiddleScore": "0",
+                "autoTopScore": "0",
+                "autoDockedState": "neither"
+            },
+            "teleop": {
+                "scoredBoth": "false",
+                "teleopBottomScore": "2",
+                "teleopMiddleScore": "0",
+                "teleopTopScore": "0",
+                "teleopDockState": "in community"
+            }
+        },
+        {
+            "teamNumber": "2106",
+            "defenseScore": "2",
+            "offenseScore": "4",
+            "tipped": "false",
+            "matchNum": "1",
+            "auto": {
+                "autoMove": "true",
+                "autoBottomScore": "0",
+                "autoMiddleScore": "0",
+                "autoTopScore": "1",
+                "autoDockedState": "balance platform"
+            },
+            "teleop": {
+                "scoredBoth": "true",
+                "teleopBottomScore": "1",
+                "teleopMiddleScore": "1",
+                "teleopTopScore": "2",
+                "teleopDockState": "in community"
+            }
+        },
+        {
+            "teamNumber": "449",
+            "defenseScore": "3",
+            "offenseScore": "5",
+            "tipped": "false",
+            "matchNum": "2",
+            "auto": {
+                "autoMove": "true",
+                "autoBottomScore": "0",
+                "autoMiddleScore": "0",
+                "autoTopScore": "1",
+                "autoDockedState": "balance platform"
+            },
+            "teleop": {
+                "scoredBoth": "true",
+                "teleopBottomScore": "3",
+                "teleopMiddleScore": "1",
+                "teleopTopScore": "2",
+                "teleopDockState": "balance platform"
+            }
+        },
+        {
+            "teamNumber": "6189",
+            "defenseScore": "1",
+            "offenseScore": "1",
+            "tipped": "false",
+            "matchNum": "1",
+            "auto": {
+                "autoMove": "true",
+                "autoBottomScore": "1",
+                "autoMiddleScore": "0",
+                "autoTopScore": "0",
+                "autoDockedState": "neither"
+            },
+            "teleop": {
+                "scoredBoth": "true",
+                "teleopBottomScore": "1",
+                "teleopMiddleScore": "0",
+                "teleopTopScore": "1",
+                "teleopDockState": "balance platform"
+            }
+        },
+        {
+            "teamNumber": "4286",
+            "defenseScore": "3",
+            "offenseScore": "1",
+            "tipped": "false",
+            "matchNum": "2",
+            "auto": {
+                "autoMove": "false",
+                "autoBottomScore": "1",
+                "autoMiddleScore": "0",
+                "autoTopScore": "0",
+                "autoDockedState": "neither"
+            },
+            "teleop": {
+                "scoredBoth": "false",
+                "teleopBottomScore": "0",
+                "teleopMiddleScore": "0",
+                "teleopTopScore": "0",
+                "teleopDockState": "balance platform"
+            }
+        },
+        {
+            "teamNumber": "617",
+            "defenseScore": "2",
+            "offenseScore": "3",
+            "tipped": "false",
+            "matchNum": "3",
+            "auto": {
+                "autoMove": "true",
+                "autoBottomScore": "1",
+                "autoMiddleScore": "0",
+                "autoTopScore": "0",
+                "autoDockedState": "neither"
+            },
+            "teleop": {
+                "scoredBoth": "true",
+                "teleopBottomScore": "5",
+                "teleopMiddleScore": "0",
+                "teleopTopScore": "0",
+                "teleopDockState": "on platform"
+            }
+        },
+        {
+            "teamNumber": "384",
+            "defenseScore": "2",
+            "offenseScore": "4",
+            "tipped": "false",
+            "matchNum": "4",
+            "auto": {
+                "autoMove": "true",
+                "autoBottomScore": "0",
+                "autoMiddleScore": "0",
+                "autoTopScore": "0",
+                "autoDockedState": "on platform"
+            },
+            "teleop": {
+                "scoredBoth": "false",
+                "teleopBottomScore": "0",
+                "teleopMiddleScore": "1",
+                "teleopTopScore": "3",
+                "teleopDockState": "balance platform"
+            }
+        },
+        {
+            "teamNumber": "6882",
+            "defenseScore": "2",
+            "offenseScore": "1",
+            "tipped": "false",
+            "matchNum": "5",
+            "auto": {
+                "autoMove": "true",
+                "autoBottomScore": "1",
+                "autoMiddleScore": "0",
+                "autoTopScore": "0",
+                "autoDockedState": "neither"
+            },
+            "teleop": {
+                "scoredBoth": "false",
+                "teleopBottomScore": "0",
+                "teleopMiddleScore": "0",
+                "teleopTopScore": "0",
+                "teleopDockState": "neither"
+            }
+        },
+        {
+            "teamNumber": "449",
+            "defenseScore": "1",
+            "offenseScore": "1",
+            "tipped": "false",
+            "matchNum": "6",
+            "auto": {
+                "autoMove": "true",
+                "autoBottomScore": "0",
+                "autoMiddleScore": "0",
+                "autoTopScore": "0",
+                "autoDockedState": "on platform"
+            },
+            "teleop": {
+                "scoredBoth": "false",
+                "teleopBottomScore": "1",
+                "teleopMiddleScore": "2",
+                "teleopTopScore": "0",
+                "teleopDockState": "on platform"
+            }
+        },
+        {
+            "teamNumber": "404",
+            "defenseScore": "3",
+            "offenseScore": "1",
+            "tipped": "false",
+            "matchNum": "7",
+            "auto": {
+                "autoMove": "false",
+                "autoBottomScore": "0",
+                "autoMiddleScore": "0",
+                "autoTopScore": "0",
+                "autoDockedState": "on platform"
+            },
+            "teleop": {
+                "scoredBoth": "false",
+                "teleopBottomScore": "1",
+                "teleopMiddleScore": "1",
+                "teleopTopScore": "1",
+                "teleopDockState": "neither"
+            }
+        },
+        {
+            "teamNumber": "3939",
+            "defenseScore": "1",
+            "offenseScore": "1",
+            "tipped": "false",
+            "matchNum": "8",
+            "auto": {
+                "autoMove": "true",
+                "autoBottomScore": "0",
+                "autoMiddleScore": "0",
+                "autoTopScore": "0",
+                "autoDockedState": "neither"
+            },
+            "teleop": {
+                "scoredBoth": "false",
+                "teleopBottomScore": "1",
+                "teleopMiddleScore": "2",
+                "teleopTopScore": "1",
+                "teleopDockState": "balance platform"
+            }
+        }
+    ]
+}
