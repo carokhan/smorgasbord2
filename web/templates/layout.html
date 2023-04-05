@@ -161,7 +161,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                     <select name="team_name" id="team_name" required="required" style="width:200px" autocomplete="on" onchange="form.submit()">
                                         <option value="" label="Select a team! (type/click)" selected="selected">Select a team! (type/click)</option>
                                         {% for item in context.team_list %}
-                                            <option value="{{item}}">{{item}}</option>
+                                            <option value="{{context.team_nums[item]}}">{{item}}</option>
                                         {% endfor %}
                                     </select>
                                 </li>

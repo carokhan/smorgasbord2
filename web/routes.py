@@ -34,6 +34,7 @@ def event_page():
             teams[int(num)] = teamnames[int(num)]
         except KeyError:
             data = data[data.teamNumber != num]
+    team_nums = {name: number for number, name in teams.items()}
 
     auto_average = round(data["autoPoints"].mean(), 2)
     teleop_average = round(data["telePoints"].mean(), 2)
@@ -52,6 +53,7 @@ def event_page():
         "failure": failure,
         "matches": matches,
         "team_list": sorted(list(teams.values())),
+        "team_nums": team_nums,
         "graph": graph,
         "time": datetime.now().strftime("%H:%M:%S"),
     }
@@ -68,6 +70,7 @@ def team_page():
             teams[int(num)] = teamnames[int(num)]
         except KeyError:
             data = data[data.teamNumber != num]
+    team_nums = {name: number for number, name in teams.items()}
 
     team = request.form["team_name"].split(" ")[0]
     name = teamnames[int(team)]
@@ -99,6 +102,7 @@ def team_page():
         "failure": failure,
         "graph": graph,
         "team_list": sorted(list(teams.values())),
+        "team_nums": team_nums,
         "time": datetime.now().strftime("%H:%M:%S"),
     }
 
@@ -109,11 +113,16 @@ def team_page():
 def pit_page():
     data = data_tools.load_data()
     teams = {}
-    for num in list(data["teamNumber"]):
-        try:
-            teams[int(num)] = teamnames[int(num)]
-        except KeyError:
-            data = data[data.teamNumber != num]
+
+    try:
+        for num in list(data["teamNumber"]):
+            try:
+                teams[int(num)] = teamnames[int(num)]
+            except KeyError:
+                data = data[data.teamNumber != num]
+        team_nums = {name: number for number, name in teams.items()}
+    except TypeError:
+        team_nums = {}
 
     tba = tbapy.TBA(os.environ["TBA_API_KEY"])
 
@@ -218,6 +227,7 @@ def pit_page():
         "zip": zip,
         "time": datetime.now().strftime("%H:%M:%S"),
         "team_list": sorted(list(teams.values())),
+        "team_nums": team_nums,
     }
 
     return render_template("pit.html", context=context)
@@ -233,6 +243,7 @@ def alliance_page():
             teams[int(num)] = teamnames[int(num)]
         except KeyError:
             data = data[data.teamNumber != num]
+    team_nums = {name: number for number, name in teams.items()}
 
     red_alliance = [
         request.form["red1"].split(" ")[0],
@@ -277,6 +288,7 @@ def alliance_page():
         "percentage": percentage,
         "time": datetime.now().strftime("%H:%M:%S"),
         "team_list": sorted(list(teams.values())),
+        "team_nums": team_nums,
         "graph": graph
     }
 
