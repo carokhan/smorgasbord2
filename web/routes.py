@@ -109,11 +109,15 @@ def team_page():
 def pit_page():
     data = data_tools.load_data()
     teams = {}
-    for num in list(data["teamNumber"]):
-        try:
-            teams[int(num)] = teamnames[int(num)]
-        except KeyError:
-            data = data[data.teamNumber != num]
+
+    try:
+        for num in list(data["teamNumber"]):
+            try:
+                teams[int(num)] = teamnames[int(num)]
+            except KeyError:
+                data = data[data.teamNumber != num]
+    except TypeError:
+        pass
 
     tba = tbapy.TBA(os.environ["TBA_API_KEY"])
 
