@@ -33,7 +33,6 @@ def load_data(path="./data"):
     files = [f for f in os.listdir(path) if f.endswith(".json")]
 
     if len(files) == 0:
-        print("No data found.")
         return None
 
     for file in files:
@@ -48,9 +47,19 @@ def load_data(path="./data"):
 
     df = clean_data(df)
     df = pointify(df)
+    df = normalize(df)
 
     return df
 
+def normalize(df):
+    df["autoPointsNormalized"] = df["autoPoints"] / df["autoPoints"].abs().max()
+    df["telePointsNormalized"] = df["telePoints"] / df["telePoints"].abs().max()
+    df["chargePointsNormalized"] = df["chargePoints"] / df["chargePoints"].abs().max()
+    df["defenseScoreNormalized"] = df["defenseScore"] / df["defenseScore"].abs().max()
+    df["cyclesNormalized"] = df["cycles"] / df["cycles"].abs().max()
+
+    return df
+    
 
 def pointify(df):
     df["cycles"] = df.apply((lambda row: cycles(row)), axis=1)
@@ -61,6 +70,7 @@ def pointify(df):
     df["totalPoints"] = df["autoPoints"] + df["telePoints"]
 
     df["tipped"] = df["tipped"].map({'false': 0, 'true': 1})
+    df["notTipped"] = (df["tipped"] + 1) % 2
     df["autoMove"] = df["autoMove"].map({'false': 0, 'true': 1})
 
     df["autoDockedState"] = df["autoDockedState"].map({'neither': 0, 'on platform': 1, 'balance platform': 2})
