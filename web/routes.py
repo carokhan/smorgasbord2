@@ -77,7 +77,6 @@ def event_page():
 
 @app.route("/team", methods=["POST"])
 def team_page():
-def team_page():
     data = data_tools.load_data()
 
     teams = {}
