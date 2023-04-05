@@ -123,7 +123,6 @@ def by_team(df):
         },
         width=1500,
         height=550,
-        height=550,
         paper_bgcolor="rgba(255,255,255,0)",
         plot_bgcolor="rgba(255,255,255,0)",
         font=dict(color="#777"),
