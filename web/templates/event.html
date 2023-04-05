@@ -9,7 +9,7 @@ put your custom script or styling here
 
 {% block my_content %}
 <div class="row">
-    <div class="col-sm">
+    <div class="col-sm" style="margin-left: 30px">
         <!-- small box -->
         <div class="small-box bg-warning" style="margin:10px">
             <div class="inner">
@@ -46,6 +46,17 @@ put your custom script or styling here
         <!-- small box -->
         <div class="small-box bg-warning" style="margin:10px">
             <div class="inner">
+                <h3>{{context.failure}}</h3>
+
+                <p>Average chance of failure</p>
+            </div>
+        </div>
+    </div>
+    <!-- ./col -->
+    <div class="col-sm">
+        <!-- small box -->
+        <div class="small-box bg-warning" style="margin:10px">
+            <div class="inner">
                 <h3>{{context.cycles}}</h3>
 
                 <p>Average cycles</p>
@@ -53,7 +64,7 @@ put your custom script or styling here
         </div>
     </div>
     <!-- ./col -->
-    <div class="col-sm">
+    <div class="col-sm" style="margin-right: 30px">
         <!-- small box -->
         <div class="small-box bg-warning" style="margin:10px">
             <div class="inner">

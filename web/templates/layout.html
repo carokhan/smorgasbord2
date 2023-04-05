@@ -7,6 +7,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
 <head>
     <meta charset="utf-8">
+    <meta http-equiv="refresh" content="300">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <style>
@@ -47,6 +48,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
             box-shadow: 1px 1px 2px 0 rgb(0 0 0 / 40%);
             transition: .3s;
         }
+
     </style>
 
     <title>The Smorgasbord</title>
@@ -59,18 +61,19 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <!-- Google Font: Source Sans Pro -->
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
 
-    <link rel="stlesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/vega-tooltip@0.16.0/vega-tooltip.scss">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/vega-tooltip@0.16.0/vega-tooltip.scss">
     
-
+    <script>toggle_light_mode()</script>
     
     <!-- Import Plotly (does not have to be from CDN) -->
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    
     {% block script %}
     {% endblock script %}
     
 </head>
 
-<body class="hold-transition sidebar-mini layout-fixed">
+<body class="hold-transition sidebar-mini layout-fixed" onload="set_dark()">
     <div class="wrapper">
 
         <!-- Navbar -->
@@ -119,15 +122,25 @@ scratch. This page gets rid of all links and provides the needed markup only.
                             </a>
                             
                         </li>
+                        
                         <li class="nav-item has-treeview">
-                            <a href="/event.html" class="nav-link ">
+                            <a href="/" class="nav-link ">
+                                <i class="nav-icon fas fa-wrench"></i>
+                                <p>
+                                    Pit view
+                                </p>
+                            </a>
+                        </li>
+
+                        <li class="nav-item has-treeview">
+                            <a href="/event" class="nav-link ">
                                 <i class="nav-icon fas fa-trophy"></i>
                                 <p>
                                     Full event
                                 </p>
                             </a>
                         </li>
-                       
+
                         <li class="nav-item has-treeview menu-closed">
                             <a href="#" class="nav-link">
                                 <i class="nav-icon fas fa-robot"></i>
@@ -138,19 +151,85 @@ scratch. This page gets rid of all links and provides the needed markup only.
                             </a>
                             <ul class="nav nav-treeview">
                                 <li class="nav-item">
-                                    <a href="#" style="display: block; padding: 0.2rem 1rem">
+                                    <a href="#" style="display: block; padding: 0.1rem 1rem">
                                 
                                         <p>Team Number</p>
                                     </a>
                                 </li>
                                 <li>
-                                <form  method="POST" action="{{url_for('plot_team')}}" style="margin-left:25px; margin-bottom:5px; margin-top:-15px">
+                                <form  method="POST" action="{{url_for('team_page')}}" style="margin-left:25px; margin-bottom:5px; margin-top:-15px">
                                     <select name="team_name" id="team_name" required="required" style="width:200px" autocomplete="on" onchange="form.submit()">
                                         <option value="" label="Select a team! (type/click)" selected="selected">Select a team! (type/click)</option>
                                         {% for item in context.team_list %}
                                             <option value="{{item}}">{{item}}</option>
                                         {% endfor %}
                                     </select>
+                                </li>
+                                </form>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item has-treeview menu-closed">
+                            <a href="#" class="nav-link">
+                                <i class="nav-icon fas fa-flag"></i>
+                                <p>
+                                    Alliance playground
+                                    <i class="right fas fa-angle-left"></i>
+                                </p>
+                            </a>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item">
+                                    <a href="#" style="display: block; padding: 0.1rem 1rem">
+                                
+                                        <p>Select team numbers:</p>
+                                    </a>
+                                </li>
+                                <li>
+                                <li>
+                                <form method="POST" action="{{url_for('alliance_page')}}" style="margin-left:25px; margin-bottom:5px; margin-top:-15px">
+                                    <select name="red1" id="team_name" required="required" style="width:200px; background-color: crimson;" autocomplete="on">
+                                        <option value="" label="" selected="selected"></option>
+                                        {% for item in context.team_list %}
+                                            <option value="{{item}}">{{item}}</option>
+                                        {% endfor %}
+                                    </select>
+                                    <br>
+                                    <select name="red2" id="team_name" required="required" style="width:200px; background-color: crimson;" autocomplete="on">
+                                        <option value="" label="" selected="selected"></option>
+                                        {% for item in context.team_list %}
+                                            <option value="{{item}}">{{item}}</option>
+                                        {% endfor %}
+                                    </select>
+                                    <br>
+                                    <select name="red3" id="team_name" required="required" style="width:200px; background-color: crimson;" autocomplete="on">
+                                        <option value="" label="" selected="selected"></option>
+                                        {% for item in context.team_list %}
+                                            <option value="{{item}}">{{item}}</option>
+                                        {% endfor %}
+                                    </select>
+                                    <br>
+                                    <select name="blue1" id="team_name" required="required" style="width:200px; background-color: dodgerblue;" autocomplete="on">
+                                        <option value="" label="" selected="selected"></option>
+                                        {% for item in context.team_list %}
+                                            <option value="{{item}}">{{item}}</option>
+                                        {% endfor %}
+                                    </select>
+                                    <br>
+                                    <select name="blue2" id="team_name" required="required" style="width:200px; background-color: dodgerblue;" autocomplete="on">
+                                        <option value="" label="" selected="selected"></option>
+                                        {% for item in context.team_list %}
+                                            <option value="{{item}}">{{item}}</option>
+                                        {% endfor %}
+                                    </select>
+                                    <br>
+                                    <select name="blue3" id="team_name" required="required" style="width:200px; background-color: dodgerblue;" autocomplete="on">
+                                        <option value="" label="" selected="selected"></option>
+                                        {% for item in context.team_list %}
+                                            <option value="{{item}}">{{item}}</option>
+                                        {% endfor %}
+                                    </select>
+                                    <br>
+                                    <button class="button execute" name="submit" value="submit">Submit</button>
                                 </li>
                                 </form>
                             </ul>
@@ -187,8 +266,9 @@ scratch. This page gets rid of all links and provides the needed markup only.
         <!-- Main Footer -->
         <footer class="main-footer" style="bottom:0px">
             <!-- To the right -->
-                <p style="float:left; margin-left: 10px; ">Made with 💖 by Apoorva S, Team 1086</p>
-                <h2 style="float:right; margin-left: 10px; ">🌙</h2>
+                <div><p style="float:left; margin-left: 10px; ">Made with 💖 by Apoorva S, Team 1086<br>Last updated {{context.time}}</p>
+                
+                    <h2 style="float:right; margin-left: 10px; ">🌙</h2></div>
                 <button 
                     class="light-mode-button" 
                     aria-label="Toggle Light Mode" 
@@ -218,6 +298,12 @@ scratch. This page gets rid of all links and provides the needed markup only.
             localStorage.lightMode = "dark";
             app.setAttribute("light-mode", "dark");
             }		
+        }
+
+        function set_dark() {
+            var app = document.getElementsByTagName("BODY")[0];
+            localStorage.lightMode = "dark";
+            app.setAttribute("light-mode", "dark");
         }
         </script>
 </body>
