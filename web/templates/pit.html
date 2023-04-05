@@ -35,19 +35,19 @@ put your custom script or styling here
             <tr>
                 {% for col in context.columns %}
                 {% if "Red" in col %}
-                <th style="color:crimson">{{col}}</th>
+                <th style="color:crimson; text-align: center;">{{col}}</th>
                 {% elif "Blue" in col %}
-                <th style="color:dodgerblue">{{col}}</th>
+                <th style="color:dodgerblue; text-align: center;">{{col}}</th>
                 {% else %}
-                <th>{{col}}</th>
+                <th style="text-align: center;">{{col}}</th>
                 {% endif %}
                 {% endfor %}
-                <th>Insights</th>
+                <th style="text-align: center">Insights</th>
             </tr>
             {% for row in context.rows %}
             <tr>
                 {% for col, value in context.zip(context.columns, row) %}
-                <td>
+                <td style="text-align: center;">
 
 
                     {% if "Red" in col %}
@@ -68,11 +68,12 @@ put your custom script or styling here
 
                 </td>
                 {% endfor %}
-                <td>
+                <td style="text-align: center;">
                     <form style="display: none" action="playground" method="post">
                         {% for col, value in context.zip(context.columns, row) %}
                         {% if "e" in col %}
-                        <select name="{{context.table_fields[col]}}" id="{{context.table_fields[col]}}" required="required" style="width:200px" autocomplete="on">
+                        <select name="{{context.table_fields[col]}}" id="{{context.table_fields[col]}}"
+                            required="required" style="width:200px" autocomplete="on">
                             <option value="{{value}}" label="{{value}}" selected="selected">{{value}}</option>
                         </select>
                         {% endif %}
