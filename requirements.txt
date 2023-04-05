@@ -4,4 +4,6 @@ pandas==1.5.3
 plotly==5.9.0
 python-dotenv==0.20.0
 pyyaml
+statbotics
+tbapy
 waitress

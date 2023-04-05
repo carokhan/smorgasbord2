@@ -519,7 +519,7 @@ hr {
 .col-xl-9,
 .col-xl-auto {
   position: relative;
-  width: 100%;
+  width: 10%;
   padding-right: 7.5px;
   padding-left: 7.5px;
 }

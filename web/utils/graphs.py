@@ -78,6 +78,8 @@ def by_team(df):
 
     fig = make_subplots(rows=3, cols=1, shared_xaxes=True, vertical_spacing=0.125)
 
+    fig = make_subplots(rows=3, cols=1, shared_xaxes=True, vertical_spacing=0.125)
+
     fig.add_trace(
         go.Scatter(
             x=list(df["matchNum"]),
@@ -120,6 +122,7 @@ def by_team(df):
             "yanchor": "top",
         },
         width=1500,
+        height=550,
         height=550,
         paper_bgcolor="rgba(255,255,255,0)",
         plot_bgcolor="rgba(255,255,255,0)",

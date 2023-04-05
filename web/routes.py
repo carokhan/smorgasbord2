@@ -16,6 +16,17 @@ load_dotenv()
 
 with open("config.yaml", "r") as c:
     config = yaml.load(c, Loader=yaml.Loader)
+import tbapy
+import os
+from dotenv import load_dotenv
+from datetime import datetime
+import time
+import statbotics
+
+load_dotenv()
+
+with open("config.yaml", "r") as c:
+    config = yaml.load(c, Loader=yaml.Loader)
 
 with open("data/teams.yaml", "r") as f:
     teamnames = yaml.load(f, Loader=yaml.Loader)
@@ -25,6 +36,8 @@ def event_page():
     data = data_tools.load_data()
 
     if data is None:
+        context = {"team_list": [], "time": datetime.now().strftime("%H:%M:%S")}
+        return render_template("204.html", context=context)
         context = {"team_list": [], "time": datetime.now().strftime("%H:%M:%S")}
         return render_template("204.html", context=context)
 
@@ -40,6 +53,7 @@ def event_page():
     charge_average = round(data["chargePoints"].mean(), 2)
     cycles = round(data["cycles"].mean(), 2)
     failure = round(data["tipped"].mean(), 2)
+    failure = round(data["tipped"].mean(), 2)
     matches = data["matchNum"].max()
 
     graph = graphs.overall_event(data)
@@ -50,15 +64,19 @@ def event_page():
         "charge_average": charge_average,
         "cycles": cycles,
         "failure": failure,
+        "failure": failure,
         "matches": matches,
         "team_list": sorted(list(teams.values())),
         "graph": graph,
         "time": datetime.now().strftime("%H:%M:%S"),
+        "time": datetime.now().strftime("%H:%M:%S"),
     }
+    return render_template("event.html", context=context)
     return render_template("event.html", context=context)
 
 
 @app.route("/team", methods=["POST"])
+def team_page():
 def team_page():
     data = data_tools.load_data()
 
@@ -85,6 +103,7 @@ def team_page():
 
     defense = round(team_data["defenseScore"].mean(), 2)
     failure = round(team_data["tipped"].mean(), 2)
+    failure = round(team_data["tipped"].mean(), 2)
 
     graph = graphs.by_team(team_data)
 
@@ -99,6 +118,7 @@ def team_page():
         "failure": failure,
         "graph": graph,
         "team_list": sorted(list(teams.values())),
+        "time": datetime.now().strftime("%H:%M:%S"),
         "time": datetime.now().strftime("%H:%M:%S"),
     }
 
