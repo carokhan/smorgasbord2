@@ -151,6 +151,9 @@ def pit_page():
     losses = 0
     ties = 0
 
+    if len(team_matches) == 0:
+        record = "0-0-0"
+
     for match in team_matches:
         if match["actual_time"] is None:
             if match["comp_level"] != "qm":
