@@ -44,7 +44,7 @@ put your custom script or styling here
                 {% endfor %}
                 <th style="text-align: center">Insights</th>
             </tr>
-            {% for row in context.rows %}
+            {% for row in context.rows[::-1] %}
             <tr>
                 {% for col, value in context.zip(context.columns, row) %}
                 <td style="text-align: center;">
