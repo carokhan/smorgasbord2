@@ -278,13 +278,18 @@ def alliance_page():
     if percentage < 50:
         percentage = 100 - percentage
 
-    lookup = lambda x: data[data.teamNumber == x]
-    red_dfs = [lookup(int(team)) for team in red_alliance]
-    blue_dfs = [lookup(int(team)) for team in blue_alliance]
+    if data is not None:
+        lookup = lambda x: data[data.teamNumber == x]
+        red_dfs = [lookup(int(team)) for team in red_alliance]
+        blue_dfs = [lookup(int(team)) for team in blue_alliance]
 
-    try:
-        graph = graphs.alliance_graph(red_dfs, blue_dfs)
-    except ValueError:
+        try:
+            graph = graphs.alliance_graph(red_dfs, blue_dfs)
+        except ValueError:
+            graph = None
+    else:
+        red_dfs = None
+        blue_dfs = None
         graph = None
 
     context = {
