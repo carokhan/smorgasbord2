@@ -141,7 +141,7 @@ def pit_page():
     team_matches = tba.team_matches(
         team=int(config["TEAM"]), event=config["EVENT_CODE"], year=int(config["YEAR"])
     )
-    team_matches = sorted(team_matches, key=lambda match: match["predicted_time"])
+    team_matches = sorted(team_matches, key=lambda match: match["predicted_time"])[::-1]
 
     next_team = "END"
     next_color = ""
@@ -244,12 +244,15 @@ def alliance_page():
     data = data_tools.load_data()
 
     teams = {}
-    for num in list(data["teamNumber"]):
-        try:
-            teams[int(num)] = teamnames[int(num)]
-        except KeyError:
-            data = data[data.teamNumber != num]
+
+    if data is not None:
+        for num in list(data["teamNumber"]):
+            try:
+                teams[int(num)] = teamnames[int(num)]
+            except KeyError:
+                data = data[data.teamNumber != num]
     team_nums = {name: number for number, name in teams.items()}
+    
 
     red_alliance = [
         request.form["red1"].split(" ")[0],
@@ -276,13 +279,18 @@ def alliance_page():
     if percentage < 50:
         percentage = 100 - percentage
 
-    lookup = lambda x: data[data.teamNumber == x]
-    red_dfs = [lookup(int(team)) for team in red_alliance]
-    blue_dfs = [lookup(int(team)) for team in blue_alliance]
+    if data is not None:
+        lookup = lambda x: data[data.teamNumber == x]
+        red_dfs = [lookup(int(team)) for team in red_alliance]
+        blue_dfs = [lookup(int(team)) for team in blue_alliance]
 
-    try:
-        graph = graphs.alliance_graph(red_dfs, blue_dfs)
-    except ValueError:
+        try:
+            graph = graphs.alliance_graph(red_dfs, blue_dfs)
+        except ValueError:
+            graph = None
+    else:
+        red_dfs = None
+        blue_dfs = None
         graph = None
 
     context = {
